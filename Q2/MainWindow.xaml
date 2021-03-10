@@ -1,0 +1,19 @@
+﻿<Window x:Class="Q2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Q2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <ListBox x:Name="CustomerLbx" HorizontalAlignment="Left" Height="116" Margin="77,78,0,0" VerticalAlignment="Top" Width="261" SelectionChanged="CustomerLbx_SelectionChanged"/>
+        <ListBox x:Name="OrderSummaryLbx" HorizontalAlignment="Left" Height="116" Margin="463,78,0,0" VerticalAlignment="Top" Width="261" SelectedValuePath ="SalesOrderID" SelectionChanged="OrderSummaryLbx_SelectionChanged"/>
+        <Label Content="customersLb" HorizontalAlignment="Left" Margin="152,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="Order SummaryLb" HorizontalAlignment="Left" Margin="516,24,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="OrderDetailsLb" Content=" Order Details" HorizontalAlignment="Left" Margin="363,215,0,0" VerticalAlignment="Top"  />
+        <DataGrid x:Name="orderDetailsDg" HorizontalAlignment="Left" Height="121" Margin="77,265,0,0" VerticalAlignment="Top" Width="647"/>
+
+
+    </Grid>
+</Window>
